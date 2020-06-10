@@ -28,7 +28,6 @@ public class SwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
 				.apis(RequestHandlerSelectors.basePackage("com.vinoth.demo.controller")).paths(postPaths()).build();
 	}
-
 	private Predicate<String> postPaths() {
 		return (regex("/rest.*"));
 		/** For multiple rest url **/

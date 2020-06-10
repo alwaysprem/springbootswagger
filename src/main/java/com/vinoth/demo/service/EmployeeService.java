@@ -17,7 +17,6 @@ public class EmployeeService {
 		empModel.setEmpId("1");
 		empModel.setSalary(3002);
 		return empModel;
-
 	}
 
 	public Employee toPostService(Employee empData) {
